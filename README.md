@@ -5,14 +5,18 @@ The [original API documentation](https://code.google.com/archive/p/yahoo-finance
 
 ## Usage
 
-**get_stock.py** is a python 2 script that takes two arguments, the *stock index* and *stock name* and outputs to a csv file corresponding to the stock. If the CSV file already exists, it is appended to the end of the file.
+#### get_stock.py
+
+This is a python 2 script that downloads the info about a stock, adds the current unix time, and appends it to a csv file corresponding to that stock.
+
+`python get_stock.py INDEX STOCK [ARGUMENTS]`
+
+The third argument is optional, and chooses what information is requested from the api. This is built by combining arguments from the documentation, eg. *vop* to download the volume, opening and closing price of a stock. If nothing is specified, the default of *sl1op* is used.
 
 **For example:**
 ```python get_stock.py FTSE IHG```
 will create/open a file called ```FTSE IHG.csv``` and append the following on a newline:
 
 `"IHG",32.11,31.88,32.24,1453325715.12`
-
-This corresponds to ```stock ticker, current price, open price, close price, unix timestamp```
 
 
