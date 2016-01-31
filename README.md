@@ -1,7 +1,7 @@
 # yahoo-finance-api
 This repo contains a collection of scripts for pulling data or compiling datasets from the unofficial Yahoo Finance API, along with some documentation.
 
-The [original API documentation](https://code.google.com/archive/p/yahoo-finance-managed/wikis/YahooFinanceAPIs.wiki) has been removed, however an unofficial one is in **DOCUMENTATION.md**
+The [original API documentation](https://code.google.com/archive/p/yahoo-finance-managed/wikis/YahooFinanceAPIs.wiki) has been removed, however an unofficial one is in [**DOCUMENTATION.md**](./DOCUMENTATION.md)
 
 ## Usage
 
@@ -11,7 +11,7 @@ This is a python 2 script that downloads the info about a stock, adds the curren
 
 `python get_stock.py INDEX STOCK [ARGUMENTS]`
 
-The third argument is optional, and chooses what information is requested from the api. This is built by combining arguments from the documentation, eg. *vop* to download the volume, opening and closing price of a stock. If nothing is specified, the default of *sl1op* is used.
+The third argument is optional, and chooses what information is requested from the api. This is built by combining arguments from the [documentation](./DOCUMENTATION.md#api-arguments), eg. *vop* to download the volume, opening and closing price of a stock. If nothing is specified, the default of *sl1op* is used.
 
 **For example:**
 ```python get_stock.py FTSE IHG```
